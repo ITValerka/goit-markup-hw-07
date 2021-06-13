@@ -15,7 +15,7 @@
 }
 
 :root {
-  --btn-focus-background-color: #188CE8;
+  --btn-focus-background-color: #188ce8;
 }
 
 :root {
@@ -122,7 +122,8 @@ body {
   border-radius: 50%;
   background-color: transparent;
   cursor: pointer;
-  transition: background-color var(--transition-duration) var(--transition-timing-function);
+  transition: background-color var(--transition-duration)
+    var(--transition-timing-function);
 }
 
 .socnet-list__item--accent:hover,
@@ -243,7 +244,7 @@ body {
 }
 
 .nav-list__link-studia--active::after {
-  content: '';
+  content: "";
   display: flex;
   position: absolute;
   bottom: 0;
@@ -257,7 +258,7 @@ body {
 }
 
 .nav-list__link-portfolio--active::after {
-  content: '';
+  content: "";
   display: flex;
   position: absolute;
   bottom: 0;
@@ -326,7 +327,12 @@ body {
   margin-left: auto;
   margin-right: auto;
   background-color: #c4c4c4;
-  background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mainpage/hero.jpg);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/mainpage/hero.jpg);
 }
 
 .slogan {
@@ -360,7 +366,8 @@ body {
   color: var(--accent-text-for-btn);
   background-color: var(--color-logo-btn-accent);
   cursor: pointer;
-  transition: background-color var(--transition-duration) var(--transition-timing-function);
+  transition: background-color var(--transition-duration)
+    var(--transition-timing-function);
 }
 
 .make-order--accent:hover,
@@ -641,7 +648,8 @@ body {
   border-radius: 50%;
   cursor: pointer;
   background-color: rgba(255, 255, 255, 0.1);
-  transition: background-color var(--transition-duration) var(--transition-timing-function);
+  transition: background-color var(--transition-duration)
+    var(--transition-timing-function);
 }
 
 .join-us__item--accent:hover,
@@ -704,7 +712,8 @@ body {
   color: var(--accent-text-for-btn);
   background-color: var(--color-logo-btn-accent);
   cursor: pointer;
-  transition: background-color var(--transition-duration) var(--transition-timing-function);
+  transition: background-color var(--transition-duration)
+    var(--transition-timing-function);
 }
 
 .form-footer__input {
@@ -733,7 +742,9 @@ body {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 100;
-  transition: opacity var(--transition-duration) var(--transition-timing-function), visibility var(--transition-duration) var(--transition-timing-function);
+  transition: opacity var(--transition-duration)
+      var(--transition-timing-function),
+    visibility var(--transition-duration) var(--transition-timing-function);
 }
 
 .is-hidden {
@@ -820,7 +831,8 @@ body {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   cursor: pointer;
-  transition: border-color var(--transition-duration) var(--transition-timing-function);
+  transition: border-color var(--transition-duration)
+    var(--transition-timing-function);
 }
 
 .modal-form__input:focus ~ .modal-form__svg {
@@ -852,7 +864,8 @@ body {
   line-height: 1.17;
   letter-spacing: 0.01em;
   outline: transparent;
-  transition: border-color var(--transition-duration) var(--transition-timing-function);
+  transition: border-color var(--transition-duration)
+    var(--transition-timing-function);
 }
 
 .modal-form-comment::placeholder {
@@ -895,7 +908,8 @@ body {
   vertical-align: middle;
   border: 2px solid var(--color-text-body-icon-bg);
   border-radius: 4px;
-  transition: border-color var(--transition-duration) var(--transition-timing-function);
+  transition: border-color var(--transition-duration)
+    var(--transition-timing-function);
 }
 
 .modal-form__input-policy:checked + .modal-form__label-policy::before {
@@ -926,7 +940,9 @@ body {
   background-color: var(--color-logo-btn-accent);
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
   cursor: pointer;
-  transition: background-color var(--transition-duration) var(--transition-timing-function), box-shadow var(--transition-duration) var(--transition-timing-function);
+  transition: background-color var(--transition-duration)
+      var(--transition-timing-function),
+    box-shadow var(--transition-duration) var(--transition-timing-function);
 }
 
 .modal-form-btn--accent:hover,
@@ -934,7 +950,9 @@ body {
   background-color: var(--btn-focus-background-color);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
-
+.section-projects {
+  padding-bottom: 94px;
+}
 .filter-container {
   width: 1170px;
 }
@@ -964,7 +982,8 @@ body {
   padding-top: 6px;
   padding-bottom: 6px;
   font-family: Roboto;
-  transition: background-color var(--transition-duration) var(--transition-timing-function);
+  transition: background-color var(--transition-duration)
+    var(--transition-timing-function);
   background-color: #f5f4fa;
   font-weight: 500;
   font-size: 16px;
@@ -1014,7 +1033,8 @@ body {
 }
 
 .project-list__card {
-  transition: box-shadow var(--transition-duration) var(--transition-timing-function);
+  transition: box-shadow var(--transition-duration)
+    var(--transition-timing-function);
 }
 
 .project-list__card--accent:hover,
@@ -1033,7 +1053,8 @@ body {
   color: var(--accent-text-for-btn);
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
-  transition: transform var(--transition-duration) var(--transition-timing-function);
+  transition: transform var(--transition-duration)
+    var(--transition-timing-function);
   font-size: 18px;
   font-weight: 400;
   line-height: 1.55;
