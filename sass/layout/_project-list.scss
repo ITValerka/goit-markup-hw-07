@@ -1,0 +1,111 @@
+.container-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  margin-top: -30px;
+  margin-left: -30px;
+
+  & > .project-list__card {
+    flex-basis: calc(100% / 3-30px);
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+}
+.project-list {
+  &__name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+  }
+
+  &__type {
+    font-weight: 400;
+    font-size: 16;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    color: var(--second-colour-for-text);
+  }
+  &__card-description {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 23px;
+    padding-right: 23px;
+    border-left: solid 1px var(--project-border-color);
+    border-right: solid 1px var(--project-border-color);
+    border-bottom: solid 1px var(--project-border-color);
+    background-color: var(--accent-text-for-btn);
+  }
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 322px;
+    height: 168px;
+    padding: 63px 24px;
+    color: var(--accent-text-for-btn);
+    background-color: rgba(33, 150, 243, 0.9);
+    transform: translateY(100%);
+    transition: transform var(--transition-duration)
+      var(--transition-timing-function);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+
+    .project-list__card--accent:hover &,
+    .project-list__card--accent:focus & {
+      transform: translateY(0%);
+    }
+  }
+
+  &__content-wrap {
+    position: relative;
+    overflow: hidden;
+  }
+  &__card {
+    transition: box-shadow var(--transition-duration)
+      var(--transition-timing-function);
+
+    &--accent:hover,
+    &--accent:focus {
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      cursor: pointer;
+    }
+  }
+}
+
+.filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 46px;
+  margin-top: -30px;
+
+  &__button {
+    border-radius: 4px;
+    border-color: transparent;
+    margin-left: 4px;
+    margin-right: 4px;
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-family: Roboto;
+    transition: background-color var(--transition-duration)
+      var(--transition-timing-function);
+    background-color: #f5f4fa;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+
+    &--accent:hover,
+    &--accent:focus {
+      background-color: var(--color-logo-btn-accent);
+      color: var(--accent-text-for-btn);
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+  }
+}
